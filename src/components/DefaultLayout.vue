@@ -1,5 +1,5 @@
 <template>
-  <navbar />
+  <NavBarComp />
   <main>
     <div class="max-w-[1200px] mx-auto">
       <router-view />

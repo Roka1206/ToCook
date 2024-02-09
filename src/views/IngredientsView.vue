@@ -1,12 +1,12 @@
 <template>
-  <div class="p-8 pb-0">
-    <h1 class="text-4xl font-bold mb-4 text-green-500">Ingredients</h1>
+  <div class="p-8 pb-0 text-red-500">
+    <h1 class="text-4xl font-bold mb-4 text-red-500">Ingredients</h1>
   </div>
   <div class="px-8">
     <input
       type="text"
       v-model="keyword"
-      class="rounded border-2 bg-white border-gray-200 focus:ring-green-500 focus:border-green-500 mb-3 w-full"
+      class="rounded border-2 bg-white border-gray-200 focus:ring-red-500 focus:border-red-500 mb-3 w-full"
       placeholder="Search for Ingredients"
     />
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">

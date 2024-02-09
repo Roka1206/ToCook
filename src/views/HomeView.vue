@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 pb-0 text-green-500">
+  <div class="p-8 pb-0 text-red-500">
     <h1 class="text-4xl font-bold mb-4">Random Meals</h1>
   </div>
   <MealsComp :meals="meals" />
@@ -12,7 +12,7 @@ import MealsComp from "../components/MealsComp.vue";
 import axiosClient from "../axiosClient.js";
 
 const meals = ref([]);
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
 onMounted(async () => {
   for (let i = 0; i < 10; i++) {
     axiosClient

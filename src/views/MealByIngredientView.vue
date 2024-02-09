@@ -1,6 +1,6 @@
 <template>
-  <div class="p-8 pb-0">
-    <h1 class="text-4xl font-bold mb-4 text-green-500">
+  <div class="p-8 pb-0 text-red-500">
+    <h1 class="text-4xl font-bold mb-4 text-red-500">
       Meals for {{ ingredient.strIngredient }}
     </h1>
   </div>
