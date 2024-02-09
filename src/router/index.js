@@ -2,9 +2,9 @@ import { createRouter, createWebHistory } from "vue-router";
 import DefaultLayout from "../components/DefaultLayout.vue";
 import GuestLayout from "../components/GuestLayout.vue";
 import HomeView from "../views/HomeView.vue";
-import MealsByIngredientView from "../views/MealsByIngredientView.vue";
-import MealsByLetterView from "../views/MealsByLetterView.vue";
-import MealsByNameView from "../views/MealsByNameView.vue";
+import MealByIngredientView from "../views/MealByIngredientView.vue";
+import MealByLetterView from "../views/MealByLetterView.vue";
+import MealByNameView from "../views/MealByNameView.vue";
 import MealDetailsView from "../views/MealDetailsView.vue";
 import IngredientsView from "../views/IngredientsView.vue";
 
@@ -21,12 +21,12 @@ const routes = [
       {
         path: "/by-name/:name?",
         name: "byName",
-        component: MealsByNameView,
+        component: MealByNameView,
       },
       {
         path: "/by-letter/:letter?",
         name: "byLetter",
-        component: MealsByLetterView,
+        component: MealByLetterView,
       },
       {
         path: "/ingredients",
@@ -36,7 +36,7 @@ const routes = [
       {
         path: "/by-ingredient/:ingredient",
         name: "byIngredient",
-        component: MealsByIngredientView,
+        component: MealByIngredientView,
       },
       {
         path: "/meal/:id",
